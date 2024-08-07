@@ -9,7 +9,7 @@ public class Controller implements Runnable{
 
     public float calculSpeed(SuddenAccelModel data)
     {
-        moveSpeed = data.moveRange / data.moveTimer;
+        moveSpeed = data.moveRange / (data.moveTimer/3600);
         return moveSpeed;
     }
 
@@ -23,6 +23,9 @@ public class Controller implements Runnable{
                 e.printStackTrace();
             }
 
+            //타아머는 늘어나는 데 속도는 변하지 않음
+
+            data.moveRange +=1;
             data.moveTimer +=1;
             System.out.println("타이머 " + data.moveTimer);
 
