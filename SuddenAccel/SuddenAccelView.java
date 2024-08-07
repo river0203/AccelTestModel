@@ -4,12 +4,18 @@ import java.awt.*;
 public class SuddenAccelView extends JPanel{
     private JPanel       presserBarPanel, speedBarPanel, clockPanel, speedPanel;
     private JProgressBar presserBar, speedBar;
+    private Controller controller;
+    private Thread threadTimer;
 
     public SuddenAccelView()
     {
         setBackground(Color.white);
         setPreferredSize(new Dimension(600, 800));
         setLayout(null);
+
+        controller = new Controller();
+        threadTimer = new Thread(controller);
+        threadTimer.start();
 
         presserBarPanel = new JPanel();
         presserBarPanel.setBounds(80, 160, 200, 600);
