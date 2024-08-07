@@ -24,8 +24,9 @@ public class Controller implements Runnable{
             }
 
             data.moveTimer +=1;
-            System.out.println(data.moveTimer);
+            System.out.println("타이머 " + data.moveTimer);
 
+            System.out.println("현재속도 " + calculSpeed(data));
             if(data.moveTimer > 6.0466176e+17)
             {
                 System.out.println("Break Time");

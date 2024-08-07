@@ -21,28 +21,24 @@ public class SuddenAccelView extends JPanel{
         presserBarPanel.setBounds(80, 160, 200, 600);
         presserBarPanel.setBackground(Color.white);
         presserBarPanel.setBorder(BorderFactory.createTitledBorder("Press Bar Panel"));
-        presserBarPanel.setLayout(new GridLayout(2, 3));
         add(presserBarPanel);
 
         speedBarPanel = new JPanel();
         speedBarPanel.setBounds(330, 160, 200, 600);
         speedBarPanel.setBackground(Color.white);
         speedBarPanel.setBorder(BorderFactory.createTitledBorder("Speed Bar Panel"));
-        speedBarPanel.setLayout(new GridLayout(2, 3));
         add(speedBarPanel);
 
         clockPanel = new JPanel();
         clockPanel.setBounds(80, 20, 220, 100);
         clockPanel.setBackground(Color.white);
         clockPanel.setBorder(BorderFactory.createTitledBorder("Speed Bar Panel"));
-        clockPanel.setLayout(new GridLayout(2, 3));
         add(clockPanel);
 
         speedPanel = new JPanel();
         speedPanel.setBounds(350, 20, 220, 100);
         speedPanel.setBackground(Color.white);
         speedPanel.setBorder(BorderFactory.createTitledBorder("Speed"));
-        speedPanel.setLayout(new GridLayout(2, 3));
         add(speedPanel);
     }
 }
